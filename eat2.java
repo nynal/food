@@ -3,13 +3,7 @@
 
 class eat2 {
 	public static void main (String[]args){
-		
-		
-	//ランダムに数字を決める
-		int eatNumber =  (int)(Math.random() * 12 );
-		
-		System.out.println ( "今回は" + eatNumber + "が出ました" );
-	
+
 	//お店を配列に代入する
 		String eatStore [] = {
 			"スシロー",
@@ -25,6 +19,13 @@ class eat2 {
 			"金沢丼丸",
 			"ケンタッキー"
 		};
+
+		
+	//ランダムに数字を決める
+		int eatNumber =  (int)(Math.random() * eatStore.length );
+		
+		System.out.println ( "今回は" + eatNumber + "が出ました" );
+	
 		
 		System.out.println( eatStore[eatNumber] + "へ行こう" );
 		
